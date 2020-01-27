@@ -5,7 +5,9 @@
     padding: 10px;
     font-size:16px;
     text-transform: uppercase;
-    // display:none;
+    @include mq{
+        font-size:24px;
+    }
 }
 
 
@@ -15,5 +17,11 @@
     font-size: 12px;
     font-weight: 400;
     min-height: 120px;
-    // display:none;
+    @include mq{
+        font-size:18px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        margin:20px;
+        min-height: 200px;
+    }
 }

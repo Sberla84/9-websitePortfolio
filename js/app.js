@@ -6,6 +6,9 @@ const $webDesign = $("#web-design");
 const $contacts = $("#contacts");
 var $windowWidth =$(window).width();
 var $windowHeight =$(window).height();
+var w = 90;
+var h = 55;
+
 
 var txt;    // typewriter function string to write
 var b = 0;    // typewriter index
@@ -71,37 +74,48 @@ const webdesign = [
   {
     title: "Tailormade",
     description: "Every person, every business, from the little shop to the biggest industry, have different needs, different approach, different feels and your new website must be made following these rules so it fit perfectly the customer's 'body'. ",
-    image: "img/Matti-tailormade-neon.png",
-    svg: ""
+    image: "img/mattia-tailormade-hd.png",
+    svg: "icons/tailormade-detailed.svg"
   },
   {
     title: "Responsive",
-    description: "we use plenty of different devices to navigate on internet, your new website must be a joy for the eyes of all visitors, beautiful and large on desktop screens, essential and well readable on mobile devices!.",
-    image: "img/Mattia-responsive-neon.png",
-    svg: ""
+    description: "We use plenty of different devices to navigate on internet, your new website must be a joy for the eyes of all visitors, beautiful and large on desktop screens, essential and well readable on mobile devices!.",
+    image: "img/mattia-responsive-hd.png",
+    svg: "icons/responsive-detailed.svg"
   },
   {
     title: "Unique",
     description: "Millions of persons and activities are present on internet, if you want to attract theys attenction you must look different, a unique logo, unique pictures and unique look of your new website will make visitors sit and look everything you are showing! ",
-    image: "img/unique-neon.png",
-    svg: ""
+    image: "img/kids-unique-hd.png",
+    svg: "icons/unique-detailed.svg"
   },
   {
     title: "Easy",
     description: "The last word, but not the less important!! 'Make things easy' thats why the pc is born, do many things with few clicks, make interactions funny, you will be surprised on how easy you will interact with your new website, making even the most difficult tasks a relaxing walk on the Chianti hills!",
-    image: "img/mattia-easy-neon.png",
-    svg: ""
+    image: "img/mattia-easy-hd.png",
+    svg: "icons/easy-detailed.svg"
   }
 ]
 
 
 
 // UTILITY
+function responsiveWebdesign(){
+  if ($windowWidth > 767){
+    w = 40;
+    h = 50;
+  }
+  return(w,h);
+}
+
 
 $(window).resize(function(){
   $windowWidth = $(window).width();
   $windowHeight = $(window).height();
+  
 })
+
+
 
 function isEven(value) {
 	if (value%2 == 0)
@@ -153,11 +167,17 @@ function createModalPortfolio(ind){
 }
 
 function createPortfolio(){
+  var offset;
+  if ($windowWidth < 768){
+    offset = 200;
+  } else {
+    offset= 400;
+  }
   for (let x = 0; x < projects.length; x++){
     if (isEven(x)){
-      $portfolio.append("<div class='portfolio-single-container' data-aos='slide-up' data-aos-offset='400'> <div class='test index-"+ x +"'></div><div><p class='project-title-even'>"+ projects[x].title +"</p><a class='details button' index='"+ x +"'>Details</a> <a class='visit button' target='blanc' href='"+ projects[x].adress +"'>Visit</a></div></div>");
+      $portfolio.append("<div class='portfolio-single-container' data-aos='slide-up' data-aos-offset='"+ offset +"'> <div class='test index-"+ x +"'></div><div><p class='project-title-even'>"+ projects[x].title +"</p><a class='details button' index='"+ x +"'>Details</a> <a class='visit button' target='blanc' href='"+ projects[x].adress +"'>Visit</a></div></div>");
     } else {
-      $portfolio.append("<div class='portfolio-single-container' data-aos='slide-up' data-aos-offset='400'> <div><p class='project-title-odd'>"+ projects[x].title +"</p><a class='details button'   index='"+ x +"'>Details</a> <a class='visit button' target='blanc' href='"+ projects[x].adress +"'>Visit</a></div><div class='test index-"+ x +"'></div></div>");
+      $portfolio.append("<div class='portfolio-single-container' data-aos='slide-up' data-aos-offset='"+ offset +"'> <div><p class='project-title-odd'>"+ projects[x].title +"</p><a class='details button'   index='"+ x +"'>Details</a> <a class='visit button' target='blanc' href='"+ projects[x].adress +"'>Visit</a></div><div class='test index-"+ x +"'></div></div>");
     };
   }
   $portfolio.append("<div class='space-bottom'></div>");
@@ -203,6 +223,7 @@ $("#menu-portfolio").click(function(){
 $("#menu-webdesign").click(function(){
   $contacts.fadeOut(100);
   animateContactsReset();
+  responsiveWebdesign();
   $('#outer-cell').fadeOut();
   $portfolio.fadeOut();
   $("#main-nav").slideUp();
@@ -210,13 +231,14 @@ $("#menu-webdesign").click(function(){
   $('.inner').fadeIn(500);
 });
 
-function createModalWebdesign(index){
+function createModalWebdesign(index,width){
+  if (width < 768){
   $("#webdesign-modal").append("<div class='webdesign-modal-true'><div class='webdesign-modal-box-big'><h1 class='webdesign-modal-box-title '>"+ webdesign[index].title +"</h1><p id='description' class='webdesign-modal-box-description'></p><img class='webdesign-modal-img' src='"+ webdesign[index].image +"'></div></div>");
+  } else {
+  $("#webdesign-modal").append("<div class='webdesign-modal-true'><div class='webdesign-modal-box-big'><h1 class='webdesign-modal-box-title '>"+ webdesign[index].title +"</h1><p id='description' class='webdesign-modal-box-description'></p><img class='webdesign-modal-img' src='"+ webdesign[index].svg +"'></div></div>");
+  $('#webdesign-modal').append("<img class='webdesign-modal-desktop-image' src='"+  webdesign[index].image  +"'></img>");
+  }
 };
-
-
-let w = 90;
-let h = 55;
 
 
 function typeWriter() {
@@ -230,10 +252,11 @@ function typeWriter() {
 function webdesignModalFadeIn(h,w){
   b = 0;
   $('.webdesign-modal-true').fadeIn();
+  $('.webdesign-modal-desktop-image').fadeIn();
     $('.webdesign-modal-box-big').animate({
-        'height' : h+'vh' ,     //  '55vh'
-        'width' : w+'vw'       //   '90vw'
-    },500, typeWriter());
+      height : h+"vh" ,     
+      width : w+"vw"       
+  },500, typeWriter());
 }
 
 function webdesignModalFadeOut(){
@@ -241,10 +264,12 @@ function webdesignModalFadeOut(){
     height: '5vh',
     width: '4vw'
 },300);
-  $('.webdesign-modal-img').fadeOut(100);
+$('.webdesign-modal-desktop-image').fadeOut();
+$('.webdesign-modal-img').fadeOut(100);
 $('.webdesign-modal-true').fadeOut();
 setTimeout(function() {
   $('.webdesign-modal-true').remove();
+  $('.webdesign-modal-desktop-image').remove();
 }, 300);
 ;}
 
@@ -261,8 +286,8 @@ $('.menu-buttons').on('click', function(){
     let z = $(this).attr("index");
     txt = webdesign[z].description;
     setTimeout(function() {
-    createModalWebdesign(z);
-    webdesignModalFadeIn();
+    createModalWebdesign(z,$windowWidth);
+    webdesignModalFadeIn(h,w);
     }, 301);
 });
 
