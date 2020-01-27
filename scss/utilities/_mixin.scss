@@ -1,0 +1,37 @@
+@mixin mq{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin mql{
+    @media (min-width: 1024px){
+        @content;
+    }
+}
+
+
+// compatibility mixins
+
+@mixin transform($transformvalue){
+    transform: $transformvalue;
+    -webkit-transform: $transformvalue;
+    -moz-transform: $transformvalue;
+    -ms-transform: $transformvalue;
+    -o-transform: $transformvalue;
+}
+
+@mixin perspective($perspectivevalue){
+    -webkit-perspective: $perspectivevalue;
+    -ms-perspective: $perspectivevalue;
+    perspective: $perspectivevalue;
+}
+
+// CENTER MODAL
+
+@mixin center-modal($Zindex){
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index: $Zindex; 
+}

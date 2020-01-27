@@ -1,0 +1,211 @@
+
+
+
+// DIGITAL EMOTIONS
+
+.digital-emotions{
+    width:90%;
+    max-width:1200px;
+    margin: 100px auto;
+    display: block;
+  }
+
+  #d, #i, #g, #i2, #t, #a, #l, #e, #m, #o, #t2, #i3, #o2, #n, #s{
+    fill: transparent;
+    stroke: #fff;
+    animation: borderani 5s 0.5s forwards, stokeFill 6s 3s forwards;
+  }
+
+  #b,#y{
+    fill: transparent;
+    stroke: #fff;
+    animation: borderani 3s 5s forwards, stokeFill 3s 6s forwards;
+  }
+
+  #d{
+    stroke-dasharray:505px;
+    stroke-dashoffset:505px;
+  }
+  #i{
+    stroke-dasharray:195px;
+    stroke-dashoffset:195px;
+  }
+  #g{
+    stroke-dasharray:573px;
+    stroke-dashoffset:573px;
+  }
+  #i2{
+    stroke-dasharray:195px;
+    stroke-dashoffset:195px;
+  }
+  #t{
+    stroke-dasharray:325px;
+    stroke-dashoffset:325px;
+  }
+  #a{
+    stroke-dasharray:446px;
+    stroke-dashoffset:446px;
+  }
+  #l{
+    stroke-dasharray:296px;
+    stroke-dashoffset:296px;
+  }
+  #e{
+    stroke-dasharray:516px;
+    stroke-dashoffset:516px;
+  }
+  #m{
+    stroke-dasharray:712px;
+    stroke-dashoffset:712px;
+  }
+  #o{
+    stroke-dasharray:493px;
+    stroke-dashoffset:493px;
+  }
+  #t2{
+    stroke-dasharray:325px;
+    stroke-dashoffset:325px;
+  }
+  #i3{
+    stroke-dasharray:195px;
+    stroke-dashoffset:195px;
+  }
+  #o2{
+    stroke-dasharray:493px;
+    stroke-dashoffset:493px;
+  }
+  #n{
+    stroke-dasharray:542px;
+    stroke-dashoffset:542px;
+  }
+  #s{
+    stroke-dasharray:498px;
+    stroke-dashoffset:498px;
+  }
+  #b{
+    stroke-dasharray:328px;
+    stroke-dashoffset:328px;
+  }
+  #y{
+    stroke-dasharray:188px;
+    stroke-dashoffset:188px;
+  }
+
+  @keyframes borderani{
+    to{ stroke-dashoffset:0;}
+  }
+
+  @keyframes stokeFill{
+    to{ 
+      fill:#fff;
+      fill-opacity:1;
+      stroke: transparent;
+    }
+  }
+
+.by{
+    width:100px;
+    margin: 100px auto;
+    display: block;
+}
+
+
+
+// FIRMA
+
+.firma{
+    fill:none;
+    stroke: white;
+    stroke-width:4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+   }
+
+
+
+#letter-n{
+    stroke-dasharray: 884;
+    stroke-dashoffset: 884;
+    animation: enne 0.5s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+
+@keyframes enne {
+    from {
+      stroke-dashoffset: 884;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  #letter-ic{
+    stroke-dasharray: 204;
+    stroke-dashoffset: 204;
+    animation: ic 0.25s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 7.5s;
+}
+
+@keyframes ic {
+    from {
+      stroke-dashoffset: 204;
+    }
+    to {
+      stroke-dashoffset: 0;
+
+    }
+  }
+
+  #letter-v{
+    stroke-dasharray: 620;
+    stroke-dashoffset: 620;
+    animation: v 0.5s linear;
+    animation-delay: 7.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes v {
+    from {
+      stroke-dashoffset: 620;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  #letters-annetti{
+    stroke-dasharray: 1811;
+    stroke-dashoffset: 1811;
+    animation: annetti 2s linear;
+    animation-delay: 8.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes annetti {
+    from {
+      stroke-dashoffset: 1811;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  #linea-orizzontale{
+    stroke-dasharray: 903;
+    stroke-dashoffset: 903;
+    animation: linea 0.5s linear;
+    animation-delay: 10.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linea {
+    from {
+      stroke-dashoffset: 903;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

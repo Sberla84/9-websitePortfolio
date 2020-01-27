@@ -1,0 +1,127 @@
+
+#contacts{
+  display:none;
+}
+
+#hex-grid-container {
+    --n-rows: 3;
+    --n-cols: 6;
+    // --l: calc(100vw / var(--n-cols));
+    --l: 60px ;
+    --hl: calc(0.5 * var(--l));
+    --ri: calc(0.5 *1.73205* var(--l));
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
+    grid-gap: var(--hl) 0;
+    overflow: hidden;
+    margin: 0;
+    padding: var(--hl) 0;
+    height: 80vh;   
+      @include mq{
+        --l: 90px;
+    }
+  }
+  
+//   .contacts-title
+
+ .hex-cell-inner{
+     overflow: hidden;
+     height: 43%;
+     width:50%;
+     margin-left: 25%;
+     margin-top: 32%;
+     grid-column-end: span 2;
+ }
+
+  .hex-cell {
+    background: rgb(0,255,255);
+    background: radial-gradient(circle, rgba(0,255,255,0.6727065826330532) 0%, rgba(255,255,255,0) 100%);
+    overflow: hidden;
+    grid-column-end: span 2;
+    margin: calc(-1 * var(--hl)) 0;
+    transform: scale(0.95);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    
+  }
+  #middle-cell div{
+    overflow: hidden;
+    height: 43%;
+    margin-top: 32%;
+    text-align: center;
+    color: white;
+    grid-column-end: span 2;
+    font-size: 14px;
+  }
+
+  #middle-cell{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    cursor:pointer;
+  }
+
+  .instagram{
+    grid-row-start: 1;
+    grid-column-start: 4;
+  }
+
+  .email{
+    grid-row-start: 2;
+    grid-column-start: 5;
+  }
+  .github{
+    grid-row-start: 3;
+    grid-column-start: 4;
+  }
+  .whatsapp{
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+  .linkedin{
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+  .facebook{
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+
+  #outer-cell{
+    display:none;
+  }
+  
+  
+  .hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }
+
+  .contact-social-icon svg{
+    fill: white;
+    stroke-width: 5px;
+    stroke: #0ff;
+    transition: transform 0.3s, fill 0.3s;
+    cursor:pointer;
+  }
+
+  .contact-social-icon svg:hover{
+    stroke: white;
+    transform: scale(1.2);
+  }
+
+  .instagram div a svg:hover,
+  .email div a svg:hover,
+  .github div a svg:hover{
+    fill: black;
+  }
+
+  .whatsapp div a svg:hover{
+    fill: lightgreen;
+  }
+
+  .linkedin div a svg:hover{
+    fill: #0e76a8;
+  }
+
+  .facebook div a svg:hover{
+    fill: #3b5998;
+  }
