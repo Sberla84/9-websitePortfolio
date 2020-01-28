@@ -35,7 +35,7 @@ const projects = [
     logodesign: false,
     photo: false,
     adress: "https://www.ariannazingone.it/",
-    details: "For this project we started creating a new logo, then we we made some nice pictures, we did some editing to make them respect the layout and after we created a beautiful and simple website."
+    details: "This is just a test page, using a random user generator we simulated a list of employee and created a list that show some infos, with a filter by name and username and a modal to show details of the choosen employee"
   },
   {
     title: "Dashboard",
@@ -45,7 +45,7 @@ const projects = [
     logodesign: false,
     photo: false,
     adress: "https://www.ariannazingone.it/",
-    details: "For this project we started creating a new logo, then we we made some nice pictures, we did some editing to make them respect the layout and after we created a beautiful and simple website."
+    details: "We wanted to pratice aa bit on dashboards cration here, we made a complete page that show random data using three type of charts, we also tried localstorage, making the website remember the setting u choose"
   },
   {
     title: "Weel of success",
@@ -55,7 +55,7 @@ const projects = [
     logodesign: false,
     photo: false,
     adress: "https://www.ariannazingone.it/",
-    details: "For this project we started creating a new logo, then we we made some nice pictures, we did some editing to make them respect the layout and after we created a beautiful and simple website."
+    details: "Very very funny project this one, our goal was to pratice using javascript, making this very simple game. Try it out!!!"
   },
   {
     title: "Photo gallery",
@@ -65,7 +65,7 @@ const projects = [
     logodesign: false,
     photo: false,
     adress: "https://www.ariannazingone.it/",
-    details: "For this project we started creating a new logo, then we we made some nice pictures, we did some editing to make them respect the layout and after we created a beautiful and simple website."
+    details: "One of the most popular plugin u see on every website is the photo lightbox, we used jquery here to integrate a simple plugin in our project, after we made a simple search bar to filter the images."
   }
 
 ];
