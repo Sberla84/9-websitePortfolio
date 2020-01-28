@@ -85,7 +85,7 @@ const webdesign = [
   },
   {
     title: "Unique",
-    description: "Millions of persons and activities are present on internet, if you want to attract theys attenction you must look different, a unique logo, unique pictures and unique look of your new website will make visitors sit and look everything you are showing! ",
+    description: "Millions of persons and activities are present on internet, if you want to attract theyr attenction you must look different, a unique logo, unique pictures and unique look of your new website will make visitors sit and look everything you are showing! ",
     image: "img/kids-unique-hd.png",
     svg: "icons/unique-detailed.svg"
   },
@@ -102,8 +102,11 @@ const webdesign = [
 // UTILITY
 function responsiveWebdesign(){
   if ($windowWidth > 767){
-    w = 40;
+    w = 50;
     h = 50;
+  } else if ($windowWidth > 1023){
+    w= 40;
+    h= 50;
   }
   return(w,h);
 }
@@ -168,10 +171,10 @@ function createModalPortfolio(ind){
 
 function createPortfolio(){
   var offset;
-  if ($windowWidth < 768){
+  if ($windowWidth < 1024){
     offset = 200;
   } else {
-    offset= 400;
+    offset= 300;
   }
   for (let x = 0; x < projects.length; x++){
     if (isEven(x)){
@@ -252,7 +255,7 @@ function typeWriter() {
 function webdesignModalFadeIn(h,w){
   b = 0;
   $('.webdesign-modal-true').fadeIn();
-  $('.webdesign-modal-desktop-image').fadeIn();
+    $('.webdesign-modal-desktop-image').fadeIn();
     $('.webdesign-modal-box-big').animate({
       height : h+"vh" ,     
       width : w+"vw"       
@@ -330,6 +333,7 @@ AOS.init();
 
 
 // PARTICLES 
+
 
  particlesJS("particles-js", {
     "particles": {

@@ -9,6 +9,9 @@
   .space-bottom{
     width:100%;
     height: 100px;
+    @include mq{
+      height: 150px;
+    }
   }
   
   .test {
@@ -21,54 +24,32 @@
     background-size: cover; 
     filter: inner-shadow(2px 2px 5px);
     @include mq{
-      width: 300px;
-      height: 300px;
+      width: 220px;
+      height: 220px;
+    }
+    @include mql{
+      width: 240px;
+      height: 240px;
     }
   }
   
   .index-0{
     background-image: url('../img/TeD-capture.png');
   }
-  
-  // .one{
-  //   background-image:
-  //   radial-gradient(circle, rgba(181,178,178,0.227328431372549) 0%, rgba(0,0,0,0.8155637254901961) 100%), url('../img/TeD-capture.png');
-  // }
-  
-  // .one:hover{
-  //   background-image: url('../img/TeD-capture.png');
-  // }
-  
   .index-1{
     background-image: url('../img/employee.png');
   }
-  
-  // .two:hover{
-  //   background-image: url('../img/employee.png');
-  // }
-  
   .index-2{
     background-image: url('../img/dashboard.png');
-  }
-  
-  // .three:hover{
-  //   background-image: url('../img/dashboard.png');
-  // }
-  
+  } 
   .index-3{
-    background-image: url('../img/weel.png');}
-  
-  // .four:hover{
-  //   background-image: url('../img/weel.png');
-  // }
-  
+    background-image: url('../img/weel.png');
+  }
   .index-4{
     background-image: url('../img/gallery.png');
   }
   
-  // .five:hover{
-  //   background-image: url('../img/gallery.png');
-  // }
+
   
   .portfolio-single-container{
     position:relative;
@@ -90,6 +71,7 @@
       margin:10px 25% 10px auto;
     }
   }
+
 
   .portfolio-single-container div{
       margin:0 auto;
@@ -143,12 +125,36 @@
 
   // MODAL STYLE
 
+  #modal-creation{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:10000;
+    display: none;
+    background-color: black;
+  }
+  
+
   #wrap {
-    @include mq{
-      max-width: 40vw;
+    @include mqs{
+      max-width: 80vw;
       margin:0 auto;
-      background-color: rgba(255,255,255,0.1);
+    }
+    @include mq{
+      max-width: 50vw;
+      // background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,220,255,1) 1%, rgba(0,220,255,0.6530987394957983) 6%, rgba(0,219,255,0.29735644257703087) 12%, rgba(0,212,255,0) 100%);
+      // background-color: rgba(255,255,255,0.1);
+      // background-color: rgba(0,255,255,0.3);
+      background: radial-gradient(circle, rgba(0,255,255,0.6727065826330532) 0%, rgba(255,255,255,0) 100%);
+      letter-spacing: 1px;
+      line-height: 1.6;
+      min-height: 95%;
+    }
+    @include mqxl{
       height:95%;
+      max-width: 40vw;
     }
   }
 
@@ -177,6 +183,9 @@
       height: 45vh;
       width:auto;
     }
+    @include mql{
+      height:38vh;
+    }
 }
 
 .modal-portfolio-services-used{
@@ -188,7 +197,11 @@
     width:30px;
     height:30px;
     margin-right: 25px;
-    @include mq{
+    @include mql{
+      width: 40px;
+      height: 40px;
+    }
+    @include mqxl{
       width: 50px;
       height: 50px;
     }
@@ -199,7 +212,7 @@
     display:flex;
     flex-direction:row;
     border-bottom: 1px solid var(--main-color);
-    @include mq{
+    @include mql{
       width: 300px;
       margin: 10px auto;
     }
@@ -208,7 +221,10 @@
 .modal-portfolio-skill-box p{
     color:white;
     font-size:10px;
-    @include mq {
+    @include mql {
+      font-size: 16px;
+    }
+    @include mqxl {
       font-size: 18px;
     }
 }
@@ -217,7 +233,11 @@
     color:white;
     font-size:12px;
     text-align: center;
+    margin: 16px 10px;
     @include mq{
+      font-size: 14px;
+    }
+    @include mql{
       font-size: 16px;
     }
 }

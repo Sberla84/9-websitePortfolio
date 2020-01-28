@@ -1,8 +1,16 @@
 #webdesign-modal{
-    @include mq{
+    @include mqs {
         position:fixed;
-        top: 250px;
-        left:35vw;
+        top: 15vh;
+        left:45vw;
+    }
+    @include mq{
+        top: 17vh;
+        left:40vw;
+    }
+    @include mql{
+        top: 23vh;
+        left:30vw;
         
     }
 }
@@ -31,15 +39,30 @@
     height: 20vh;
     margin: 0 auto;
     display: block;
-    @include mq{
-        
+    @include mqs{
+        height: 12vh;
+    }
+    @include mqxl{
+        height: 18vh;
     }
    }
 
    .webdesign-modal-desktop-image{
        position:fixed;
-       top:250px;
-       left:0;
-       width:30vw;
+       top:28vh;
+       left:5vw;
+       width:25vw;
        display:none;
+       @include mqs{
+           width: 35vw;
+       }
+       @include mq {
+           width: 25vw;
+           top: 35vh;
+           left:10vw;
+       }
+       @include mql{
+           top: 30vh;
+           left: 2vw;
+       }
    }

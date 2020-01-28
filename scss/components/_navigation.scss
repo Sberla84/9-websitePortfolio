@@ -55,6 +55,9 @@
     font-size: 12px;
     text-transform: uppercase;
     margin-top: 5px;
+    @include mqs{
+        font-size:14px;
+    }
     @include mq{
         font-size:16px;
         padding: 5px;
@@ -80,6 +83,10 @@
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,220,255,1) 1%, rgba(0,220,255,0.6530987394957983) 6%, rgba(0,219,255,0.29735644257703087) 12%, rgba(0,212,255,0) 100%);
     box-shadow: 0 0 5px 1px #0ff, 0 0 5px 1px #0ff inset;
     padding:5px;
+    @include mqs{
+        width:60px;
+        height: 60px;
+    }
     @include mq{
         width:70px;
         height: 70px;
@@ -95,6 +102,9 @@
 
 .bottom-menu-container{
     margin-bottom:8px;
+    @include mqs{
+        margin-bottom:10px;
+    }
     @include mq{
         margin-bottom:12px;
     }
@@ -103,7 +113,7 @@
 
 
 
-// DX MENU 
+// WEBDESIGN MENU 
 
 
 .modal-webdesign-main-menu-return{
@@ -115,7 +125,10 @@
     box-shadow: 0 0 5px 1px #0ff, 0 0 5px 1px #0ff inset;
     padding: 5px 10px;
     cursor:pointer;
-    @include mq{
+    @include mqs{
+        top:5vh;
+    }
+    @include mql{
         position: relative;
         top:initial;
         right:initial;
@@ -126,19 +139,12 @@
 
 }
 
-// #webdesign{
-//     @include mq{
-//         display:flex;
-//         flex-direction: row;
-//     }
-// }
-
 
 
 .inner {
     width: 100vw;
     display:none;
-    @include mq{
+    @include mql{
         @include perspective($Perspective);
         height:100%;
     }
@@ -153,13 +159,16 @@
     bottom:0;
     flex-direction: row; 
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,220,255,1) 1%, rgba(0,220,255,0.6530987394957983) 6%, rgba(0,219,255,0.29735644257703087) 12%, rgba(0,212,255,0) 100%);
-    @include mq{
+    @include mql{
         flex-direction:column;
         background:none;
         position:relative;
         transform: rotateY($Ydegrees);
         width:15vw;
         margin: 15vh 30px 0 auto;
+    }
+    @include mqxl{
+        margin: 18vh 30px 0 auto;
     }
 }
 
@@ -170,7 +179,7 @@
     width: 75px;
     height: 100px;
     margin: 10px 2px;
-    @include mq{
+    @include mql{
         flex-direction: row; 
          width:190px;
     }
@@ -187,7 +196,7 @@
     font-size:30px;
     color: white;
     width: 75px;
-    @include mq{
+    @include mql{
         font-size:60px;
         width: 40px;
         margin: 10px 0;
@@ -201,7 +210,7 @@
     // background: radial-gradient(circle, rgba(0,255,255,0.6727065826330532) 0%, rgba(255,255,255,0) 100%);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,220,255,1) 1%, rgba(0,220,255,0.6530987394957983) 6%, rgba(0,219,255,0.29735644257703087) 12%, rgba(0,212,255,0) 100%);
     box-shadow: 0 0 5px 1px #0ff, 0 0 5px 1px #0ff inset;
-    @include mq{
+    @include mql{
         width: 120px;
     }
 
@@ -211,7 +220,7 @@
     margin: 0 auto;
     width: 40px;
     height:40px;
-    @include mq{
+    @include mql{
         width:70px;
         height:70px;
     }
@@ -222,7 +231,7 @@
     font-size: 10px;
     margin:6px auto;
     color: #0ff;
-    @include mq{
+    @include mql{
         font-size: 16px;
         margin:0 auto;
     }

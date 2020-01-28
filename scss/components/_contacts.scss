@@ -19,7 +19,7 @@
     margin: 0;
     padding: var(--hl) 0;
     height: 80vh;   
-      @include mq{
+      @include mqs{
         --l: 90px;
     }
   }

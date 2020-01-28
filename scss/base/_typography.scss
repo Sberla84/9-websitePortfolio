@@ -5,6 +5,9 @@
     padding: 10px;
     font-size:16px;
     text-transform: uppercase;
+    @include mqs {
+        font-size:24px;
+    }
     @include mq{
         font-size:24px;
     }
@@ -17,10 +20,16 @@
     font-size: 12px;
     font-weight: 400;
     min-height: 120px;
-    @include mq{
-        font-size:18px;
+    @include mqs{
+        font-size:14px;
         letter-spacing: 1px;
         line-height: 1.6;
+        min-height: 190px;
+    }
+    @include mql{
+        font-size:18px;
+        // letter-spacing: 1px;
+        // line-height: 1.6;
         margin:20px;
         min-height: 200px;
     }

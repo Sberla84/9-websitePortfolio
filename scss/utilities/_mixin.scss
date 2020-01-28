@@ -1,15 +1,26 @@
-@mixin mq{
+@mixin mqs{
     @media (min-width: 768px){
         @content;
     }
 }
 
-@mixin mql{
+@mixin mq{
     @media (min-width: 1024px){
         @content;
     }
 }
 
+@mixin mql{
+    @media (min-width: 1440px){
+        @content;
+    }
+}
+
+@mixin mqxl{
+    @media (min-width: 1980px){
+        @content;
+    }
+}
 
 // compatibility mixins
 
