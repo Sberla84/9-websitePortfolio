@@ -201,13 +201,18 @@ $(document).ready(function(){
   $portfolio.on('click', ".details", function(){
     i = $(this).attr("index");
     createModalPortfolio(i);
-    $modalPortfolio.css("display", "block");
+    $modalPortfolio.slideDown();
+    $('#main-header').fadeOut();
+    $('#portfolio').fadeOut();
+    $('#main-footer').fadeOut();
   })
 })
 
 $modalPortfolio.on("click", ".close-modal", function(){
-  $modalPortfolio.fadeOut();
-  $('#wrap').delay(500).remove();
+  $modalPortfolio.slideUp("normal", function() { $('#wrap').remove(); } );
+  $('#main-header').fadeIn();
+  $('#portfolio').fadeIn();
+  $('#main-footer').fadeIn();
 })
 
 $("#menu-portfolio").click(function(){

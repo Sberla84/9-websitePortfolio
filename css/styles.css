@@ -475,6 +475,10 @@ template {
   }
 }
 
+_:-ms-lang(x), #main-nav {
+  justify-content: center;
+}
+
 .bottom-menu-container img {
   width: 50px;
   height: 50px;
@@ -1269,6 +1273,7 @@ a {
 .test {
   width: 150px;
   height: 150px;
+  -ms-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   cursor: pointer;
@@ -1400,7 +1405,6 @@ a {
   right: 0;
   z-index: 10000;
   display: none;
-  background-color: black;
 }
 
 @media (min-width: 768px) {
@@ -1580,6 +1584,11 @@ a {
   }
 }
 
+_:-ms-lang(x), #hex-grid-container {
+  justify-content: center;
+  margin-top: 20vh;
+}
+
 .hex-cell-inner {
   overflow: hidden;
   height: 43%;
@@ -1596,6 +1605,8 @@ a {
   grid-column-end: span 2;
   margin: calc(-1 * var(--hl)) 0;
   transform: scale(0.95);
+  -ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 

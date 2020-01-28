@@ -17,6 +17,7 @@
   .test {
     width:150px;
     height: 150px;
+    -ms-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     cursor: pointer;
@@ -133,7 +134,7 @@
     right:0;
     z-index:10000;
     display: none;
-    background-color: black;
+    // background-color: black;
   }
   
 
