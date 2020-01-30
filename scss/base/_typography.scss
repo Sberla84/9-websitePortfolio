@@ -33,4 +33,7 @@
         margin:20px;
         min-height: 200px;
     }
+    @include mqxl{
+        min-height: 250px;
+    }
 }
