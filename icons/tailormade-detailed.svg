@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<?xml-stylesheet type="text/css" href="../css/styles.css"?>
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
-<style type="text/css">
+<!-- <style type="text/css">
 	.st0{fill:none;stroke:#0ff;stroke-width:0.5;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#0ff;stroke-width:0.3;stroke-miterlimit:10;}
-</style>
-<g id="matita">
-	<path class="st0" d="M23.1,8.1H9.1C8.9,8.1,8.8,8,8.8,7.8V5.2c0-0.2,0.1-0.3,0.3-0.3h14.1c0.2,0,0.3,0.1,0.3,0.3v2.6
+</style> -->
+<g id="matita" class="hide-svg">
+	<path class="st0 yellow" d="M23.1,8.1H9.1C8.9,8.1,8.8,8,8.8,7.8V5.2c0-0.2,0.1-0.3,0.3-0.3h14.1c0.2,0,0.3,0.1,0.3,0.3v2.6
 		C23.4,8,23.3,8.1,23.1,8.1z"/>
 	<polygon class="st0" points="4.6,6.6 6.1,6.1 8.8,5.2 8.8,7.9 4.6,6.7 	"/>
 	<line class="st0" x1="8.9" y1="6.6" x2="13.2" y2="6.6"/>
@@ -25,17 +25,17 @@
 	<circle class="st0" cx="6.2" cy="12.5" r="0.3"/>
 </g>
 <g id="tab_content">
-	<path class="st1" d="M17.1,24H5c-0.3,0-0.5-0.2-0.5-0.5v-7.7c0-0.3,0.2-0.5,0.5-0.5h12.1c0.3,0,0.5,0.2,0.5,0.5v7.7
+	<path class="st1 big-box hide-svg" d="M17.1,24H5c-0.3,0-0.5-0.2-0.5-0.5v-7.7c0-0.3,0.2-0.5,0.5-0.5h12.1c0.3,0,0.5,0.2,0.5,0.5v7.7
 		C17.6,23.8,17.4,24,17.1,24z"/>
-	<path class="st1" d="M28.6,19.1h-7.4c-0.3,0-0.5-0.2-0.5-0.5v-2.7c0-0.3,0.2-0.5,0.5-0.5h7.4c0.3,0,0.5,0.2,0.5,0.5v2.7
+	<path class="st1 box-top hide-svg" d="M28.6,19.1h-7.4c-0.3,0-0.5-0.2-0.5-0.5v-2.7c0-0.3,0.2-0.5,0.5-0.5h7.4c0.3,0,0.5,0.2,0.5,0.5v2.7
 		C29.1,18.8,28.9,19.1,28.6,19.1z"/>
-	<path class="st1" d="M28.6,20.6h-7.4c-0.3,0-0.5,0.2-0.5,0.5v2.4c0,0.3,0.2,0.5,0.5,0.5h7.4c0.3,0,0.5-0.2,0.5-0.5v-2.4
+	<path class="st1 box-bottom hide-svg" d="M28.6,20.6h-7.4c-0.3,0-0.5,0.2-0.5,0.5v2.4c0,0.3,0.2,0.5,0.5,0.5h7.4c0.3,0,0.5-0.2,0.5-0.5v-2.4
 		C29.1,20.9,28.9,20.6,28.6,20.6z"/>
-	<line class="st1" x1="4.6" y1="26.6" x2="16.1" y2="26.6"/>
-	<line class="st1" x1="4.6" y1="28.7" x2="11.9" y2="28.7"/>
-	<polygon class="st1" points="9.8,21.3 9.8,18.4 13.5,19.8 	"/>
+	<line class="st1 line-top word" x1="4.6" y1="26.6" x2="16.1" y2="26.6"/>
+	<line class="st1 line-bottom" x1="4.6" y1="28.7" x2="11.9" y2="28.7"/>
+	<polygon class="st1 play-button hide-svg" points="9.8,21.3 9.8,18.4 13.5,19.8 	"/>
 </g>
-<g id="righello">
+<g id="righello" class="hide-svg">
 	<path class="st0" d="M37,34.2h-3.5c-0.1,0-0.2-0.1-0.2-0.2V7.4c0-0.1,0.1-0.2,0.2-0.2H37c0.1,0,0.2,0.1,0.2,0.2V34
 		C37.2,34.1,37.1,34.2,37,34.2z"/>
 	<line class="st1" x1="33.3" y1="32" x2="34.9" y2="32"/>

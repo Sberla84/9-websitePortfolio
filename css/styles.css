@@ -1031,6 +1031,440 @@ a {
   margin: 0 auto;
 }
 
+.button-prova {
+  padding: 20px;
+  cursor: pointer;
+  background-color: green;
+}
+
+object {
+  height: 50vh;
+  margin: 50px;
+}
+
+.st0 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1;
+}
+
+.st3 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.2;
+  stroke-miterlimit: 10;
+}
+
+.st02 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st03 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st04 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st05 {
+  fill: none;
+  stroke: #0ff;
+  stroke-width: 0.4;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.round-linecap {
+  stroke-linecap: round;
+}
+
+.hide-svg {
+  opacity: 0;
+}
+
+.lightgreen {
+  stroke: green;
+}
+
+#matita {
+  animation: showPath 1s ease forwards;
+}
+
+#righello {
+  animation: showPath 1s 1s ease forwards;
+}
+
+.big-box {
+  animation: showPath 1s 2s ease forwards;
+}
+
+.box-top {
+  animation: showPath 1s 3s ease forwards;
+}
+
+.box-bottom {
+  animation: showPath 1s 4s ease forwards;
+}
+
+.play-button {
+  animation: showPath 1s 5s ease forwards;
+}
+
+.line-top {
+  animation: lineTop 1s 6s linear forwards;
+  stroke-dasharray: 11.5;
+  stroke-dashoffset: 11.5;
+}
+
+@keyframes lineTop {
+  from {
+    stroke-dashoffset: 11.5;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.line-bottom {
+  animation: lineBottom 1s 7s linear forwards;
+  stroke-dasharray: 7.3;
+  stroke-dashoffset: 7.3;
+}
+
+@keyframes lineBottom {
+  from {
+    stroke-dashoffset: 7.3;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#responsive-svg-pc-box-top {
+  animation: showPath 1s 1s ease forwards;
+}
+
+.responsive-pc-line-s-top {
+  animation: responsive-pc-line-s .5s 2s ease forwards;
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+}
+
+.responsive-pc-line-l-top {
+  animation: responsive-pc-line-l 1s 2.5s ease forwards;
+  stroke-dasharray: 9.6;
+  stroke-dashoffset: 9.6;
+}
+
+#responsive-svg-pc-box-mid {
+  animation: showPath 1s 3.5s ease forwards;
+}
+
+.responsive-pc-line-s-mid {
+  animation: responsive-pc-line-s .5s 4.5s ease forwards;
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+}
+
+.responsive-pc-line-l-mid {
+  animation: responsive-pc-line-l 1s 5s ease forwards;
+  stroke-dasharray: 9.6;
+  stroke-dashoffset: 9.6;
+}
+
+#responsive-svg-pc-box-bottom {
+  animation: showPath 1s 6s ease forwards;
+}
+
+.responsive-pc-line-s-bot {
+  animation: responsive-pc-line-s .5s 7s ease forwards;
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+}
+
+@keyframes responsive-pc-line-s {
+  from {
+    stroke-dashoffset: 6;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes responsive-pc-line-l {
+  from {
+    stroke-dashoffset: 9.6;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#tablet {
+  animation: showPath 1s 7.5s ease forwards;
+}
+
+#responsive-svg-tab-box-top {
+  animation: showPath .5s 8.5s ease forwards;
+}
+
+.responsive-tab-line-left-1,
+.responsive-tab-line-left-2,
+.responsive-tab-line-left-3,
+.responsive-tab-line-left-4,
+.responsive-tab-line-left-5,
+.responsive-tab-line-right-1,
+.responsive-tab-line-right-2,
+.responsive-tab-line-right-3,
+.responsive-tab-line-right-4,
+.responsive-tab-line-right-5 {
+  stroke-dasharray: 2.9;
+  stroke-dashoffset: 2.9;
+}
+
+#responsive-svg-tab-box-left {
+  animation: showPath .5s 9s ease forwards;
+}
+
+.responsive-tab-line-left-1 {
+  animation: responsive-tab-line 0.5s 9.5s ease forwards;
+}
+
+.responsive-tab-line-left-2 {
+  animation: responsive-tab-line 0.5s 10s ease forwards;
+}
+
+.responsive-tab-line-left-3 {
+  animation: responsive-tab-line 0.5s 10.5s ease forwards;
+}
+
+.responsive-tab-line-left-4 {
+  animation: responsive-tab-line 0.5s 11s ease forwards;
+}
+
+.responsive-tab-line-left-5 {
+  animation: responsive-tab-line 0.5s 11.5s ease forwards;
+}
+
+#responsive-svg-tab-box-right {
+  animation: showPath .5s 12s ease forwards;
+}
+
+.responsive-tab-line-right-1 {
+  animation: responsive-tab-line 0.5s 12.5s ease forwards;
+}
+
+.responsive-tab-line-right-2 {
+  animation: responsive-tab-line 0.5s 13s ease forwards;
+}
+
+.responsive-tab-line-right-3 {
+  animation: responsive-tab-line 0.5s 13.5s ease forwards;
+}
+
+.responsive-tab-line-right-4 {
+  animation: responsive-tab-line 0.5s 14s ease forwards;
+}
+
+.responsive-tab-line-right-5 {
+  animation: responsive-tab-line 0.5s 14.5s ease forwards;
+}
+
+@keyframes responsive-tab-line {
+  from {
+    stroke-dashoffset: 2.9;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#phone {
+  animation: showPath 1s 15s ease forwards;
+}
+
+#luce line {
+  animation: easy-light .5s 2s ease forwards;
+}
+
+@keyframes easy-light {
+  from {
+    opacity: 0;
+    stroke: #0ff;
+    stroke-width: 0.2;
+  }
+  to {
+    opacity: 1;
+    stroke: lightyellow;
+    stroke-width: 0.4;
+  }
+}
+
+.line {
+  animation: showPath 1s 2.5s ease forwards, dashed-line 1.5s 2.5s linear infinite;
+}
+
+.line2 {
+  animation: showPath 1s 2.5s ease forwards, dashed-line2 1.5s 2.5s linear infinite;
+}
+
+@keyframes dashed-line {
+  to {
+    stroke-dashoffset: -10;
+  }
+}
+
+@keyframes dashed-line2 {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+#stella {
+  animation: stella 4.5s 3.5s ease forwards;
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+}
+
+@keyframes stella {
+  from {
+    stroke-dashoffset: 30;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#fiore path {
+  animation: fiore 5.5s 3.5s ease forwards;
+  stroke-dasharray: 41;
+  stroke-dashoffset: 41;
+}
+
+@keyframes fiore {
+  from {
+    stroke-dashoffset: 41;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#pc_1_ {
+  animation: showPath 1s 1s ease forwards;
+}
+
+#mobile-easy {
+  animation: showPath 1s 2s ease forwards;
+}
+
+.easy-line-top-l {
+  animation: easy-line-top-l 1s 3s ease forwards;
+  stroke-dasharray: 5.4;
+  stroke-dashoffset: 5.4;
+}
+
+@keyframes easy-line-top-l {
+  from {
+    stroke-dashoffset: 5.4;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.easy-line-bottom-s {
+  animation: easy-line-bottom-s .5s 4s ease forwards;
+  stroke-dasharray: 3.5;
+  stroke-dashoffset: 3.5;
+}
+
+@keyframes easy-line-bottom-s {
+  from {
+    stroke-dashoffset: 3.5;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.easy-line-top-s {
+  animation: easy-line-top-s .5s 4.5s ease forwards;
+  stroke-dasharray: 2.9;
+  stroke-dashoffset: 2.9;
+}
+
+@keyframes easy-line-top-s {
+  from {
+    stroke-dashoffset: 2.9;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.easy-line-bottom-l {
+  animation: easy-line-bottom-l 1s 5s ease forwards;
+  stroke-dasharray: 5;
+  stroke-dashoffset: 5;
+}
+
+@keyframes easy-line-bottom-l {
+  from {
+    stroke-dashoffset: 5;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#mano {
+  animation: showPath 1s 6s ease forwards;
+}
+
+@keyframes showPath {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#OK,
+#OK_1_ {
+  animation: showPath .5s 6.5s ease forwards;
+}
+
 .digital-emotions {
   width: 90%;
   max-width: 1200px;
@@ -1721,7 +2155,6 @@ _:-ms-lang(x), #hex-grid-container {
   height: 5vh;
   width: 4vw;
   background: linear-gradient(0deg, white 0%, #00dcff 1%, rgba(0, 220, 255, 0.653099) 6%, rgba(0, 219, 255, 0.297356) 12%, rgba(0, 212, 255, 0) 100%);
-  box-shadow: 0 0 5px 1px #0ff, 0 0 5px 1px #0ff inset;
   margin: 4vh auto;
 }
 

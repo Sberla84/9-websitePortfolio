@@ -45,10 +45,10 @@ const projects = [
     logodesign: false,
     photo: false,
     adress: "https://www.ariannazingone.it/",
-    details: "We wanted to pratice aa bit on dashboards cration here, we made a complete page that show random data using three type of charts, we also tried localstorage, making the website remember the setting u choose"
+    details: "We wanted to pratice a bit on dashboards cration here, we made a complete page that show random data using three type of charts, we also tried localstorage, making the website remember the setting u choose"
   },
   {
-    title: "Weel of success",
+    title: "Wheel of success",
     description: "Hairdresser saloon's website",
     img: "img/ted-portfolio.png",
     webdesign: true,
@@ -85,18 +85,17 @@ const webdesign = [
   },
   {
     title: "Unique",
-    description: "Millions of persons and activities are present on internet, if you want to attract theyr attenction you must look different, a unique logo, unique pictures and unique look of your new website will make visitors sit and look everything you are showing! ",
+    description: "Millions of persons and activities are present on internet, if you want to attract theyr attenction you must look different, a unique logo, unique pictures and unique look of your new website will make visitors sit and enjoy everything you are showing! ",
     image: "img/kids-unique-hd.png",
     svg: "icons/unique-detailed.svg"
   },
   {
     title: "Easy",
-    description: "The last word, but not the less important!! 'Make things easy' thats why the pc is born, do many things with few clicks, make interactions funny, you will be surprised on how easy you will interact with your new website, making even the most difficult tasks a relaxing walk on the Chianti hills!",
+    description: "The last word, but not the less important!! 'Make things easy' thats why the pc is born, do many things with few clicks, make interactions fun, you will be surprised on how easy you will interact with your new website, making even the most difficult tasks a relaxing walk on the Chianti hills!",
     image: "img/mattia-easy-hd.png",
     svg: "icons/easy-detailed.svg"
   }
 ]
-
 
 
 // UTILITY
@@ -110,6 +109,9 @@ function responsiveWebdesign(){
   }
   return(w,h);
 }
+
+AOS.init();
+
 
 
 $(window).resize(function(){
@@ -197,7 +199,7 @@ $(document).ready(function(){
   setTimeout(function(){
     createPortfolio();
   },100);
- 
+  
   $portfolio.on('click', ".details", function(){
     i = $(this).attr("index");
     createModalPortfolio(i);
@@ -243,7 +245,7 @@ function createModalWebdesign(index,width){
   if (width < 768){
   $("#webdesign-modal").append("<div class='webdesign-modal-true'><div class='webdesign-modal-box-big'><h1 class='webdesign-modal-box-title '>"+ webdesign[index].title +"</h1><p id='description' class='webdesign-modal-box-description'></p><img class='webdesign-modal-img' src='"+ webdesign[index].image +"'></div></div>");
   } else {
-  $("#webdesign-modal").append("<div class='webdesign-modal-true'><div class='webdesign-modal-box-big'><h1 class='webdesign-modal-box-title '>"+ webdesign[index].title +"</h1><p id='description' class='webdesign-modal-box-description'></p><img class='webdesign-modal-img' src='"+ webdesign[index].svg +"'></div></div>");
+  $("#webdesign-modal").append("<div class='webdesign-modal-true'><div class='webdesign-modal-box-big'><h1 class='webdesign-modal-box-title '>"+ webdesign[index].title +"</h1><p id='description' class='webdesign-modal-box-description'></p><object type='image/svg+xml' class='webdesign-modal-img' data='"+ webdesign[index].svg +"'></div></div>");
   $('#webdesign-modal').append("<img class='webdesign-modal-desktop-image' src='"+  webdesign[index].image  +"'></img>");
   }
 };
