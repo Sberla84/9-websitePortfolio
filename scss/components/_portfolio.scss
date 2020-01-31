@@ -1,5 +1,6 @@
 
 #portfolio{
+    display: none;
     margin-top: 30px;
     @include mq{
       margin-top: 60px;

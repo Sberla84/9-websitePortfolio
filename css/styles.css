@@ -1458,6 +1458,7 @@ object {
 }
 
 #portfolio {
+  display: none;
   margin-top: 30px;
 }
 

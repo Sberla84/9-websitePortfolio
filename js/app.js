@@ -30,7 +30,7 @@ const projects = [
   {
     title: "API Test",
     description: "Hairdresser saloon's website",
-    img: "img/ted-portfolio.png",
+    img: "img/employee-portfolio.png",
     webdesign: true,
     logodesign: false,
     photo: false,
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Dashboard",
     description: "Hairdresser saloon's website",
-    img: "img/ted-portfolio.png",
+    img: "img/dash-portfolio.png",
     webdesign: true,
     logodesign: false,
     photo: false,
@@ -50,7 +50,7 @@ const projects = [
   {
     title: "Wheel of success",
     description: "Hairdresser saloon's website",
-    img: "img/ted-portfolio.png",
+    img: "img/wheel-portfolio.png",
     webdesign: true,
     logodesign: false,
     photo: false,
@@ -60,7 +60,7 @@ const projects = [
   {
     title: "Photo gallery",
     description: "Hairdresser saloon's website",
-    img: "img/ted-portfolio.png",
+    img: "img/gallery-portfolio.png",
     webdesign: true,
     logodesign: false,
     photo: false,
@@ -243,12 +243,6 @@ function createPortfolio(){
 
 
 $(document).ready(function(){
-  $portfolio.fadeOut(100);
-
-  setTimeout(function(){
-    createPortfolio();
-  },100);
-  
   $portfolio.on('click', ".details", function(){
     i = $(this).attr("index");
     createModalPortfolio(i);
@@ -267,12 +261,12 @@ $modalPortfolio.on("click", ".close-modal", function(){
 })
 
 $("#menu-portfolio").click(function(){
-  $landing.slideUp(100);
+  $landing.fadeOut(100);
   animateContactsReset();
   $webDesign.fadeOut();
   $contacts.fadeOut();
   $portfolio.fadeIn();
-});
+}, createPortfolio());
 
 
 
@@ -283,10 +277,11 @@ $("#menu-portfolio").click(function(){
 $("#menu-webdesign").click(function(){
   $landing.fadeOut(100);
   $contacts.fadeOut(100);
+  $portfolio.fadeOut(100);
   animateContactsReset();
   responsiveWebdesign();
   $('#outer-cell').fadeOut();
-  $portfolio.fadeOut();
+  
   $("#main-nav").slideUp();
   $webDesign.fadeIn();
   $('.inner').fadeIn(500);
