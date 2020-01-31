@@ -134,6 +134,7 @@
     right:0;
     z-index:10000;
     display: none;
+    max-height: 100vh;
     // background-color: black;
   }
   
@@ -181,11 +182,8 @@
     margin: 0 auto;
     display: block;
     @include mq{
-      height: 45vh;
+      height: 38vh;
       width:auto;
-    }
-    @include mql{
-      height:38vh;
     }
 }
 

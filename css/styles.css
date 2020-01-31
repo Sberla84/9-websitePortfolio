@@ -386,6 +386,12 @@ template {
   }
 }
 
+@media (min-width: 1980px) {
+  .webdesign-modal-box-description {
+    min-height: 250px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -708,327 +714,6 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-.container {
-  width: 336px;
-  height: 280px;
-  position: relative;
-  margin: 130px auto;
-}
-
-@keyframes main-glitch-show {
-  12.5% {
-    visibility: visible;
-    background-image: none;
-  }
-  75% {
-    opacity: 0.2;
-    background-image: url(../img/Mattia-responsive-neon.png);
-  }
-  81.25% {
-    opacity: 0.5;
-  }
-  87.5% {
-    opacity: 0.5;
-    -webkit-filter: hue-rotate(60deg) invert(1) saturate(2.7);
-  }
-  93.75% {
-    opacity: 0.5;
-    filter: none;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes main-glitch {
-  5.71% {
-    clip: rect(438px, 9999px, 459px, 0);
-    left: -4%;
-  }
-  8.56% {
-    clip: rect(279px, 9999px, 294px, 0);
-    left: -4%;
-  }
-  11.42% {
-    clip: rect(448px, 9999px, 449px, 0);
-    left: -4%;
-  }
-  14.27% {
-    clip: rect(301px, 9999px, 345px, 0);
-    left: -2%;
-  }
-  17.13% {
-    clip: rect(466px, 9999px, 526px, 0);
-    left: -1%;
-  }
-  19.98% {
-    clip: rect(263px, 9999px, 296px, 0);
-    left: -4%;
-  }
-  22.84% {
-    clip: rect(174px, 9999px, 268px, 0);
-    left: 4%;
-  }
-  25.70% {
-    clip: rect(100px, 9999px, 167px, 0);
-    left: 2%;
-  }
-  28.55% {
-    clip: rect(308px, 9999px, 311px, 0);
-    left: 5%;
-  }
-  31.40% {
-    clip: rect(131px, 9999px, 147px, 0);
-    left: -1%;
-  }
-  34.26% {
-    clip: rect(54px, 9999px, 92px, 0);
-    left: -1%;
-  }
-  37.11% {
-    clip: rect(341px, 9999px, 421px, 0);
-    left: 3%;
-  }
-  39.97% {
-    clip: rect(354px, 9999px, 394px, 0);
-    left: 5%;
-  }
-  42.82% {
-    clip: rect(260px, 9999px, 360px, 0);
-    left: -1%;
-  }
-  45.68% {
-    clip: rect(9px, 9999px, 29px, 0);
-    left: 1%;
-  }
-  48.53% {
-    clip: rect(264px, 9999px, 322px, 0);
-    left: 0%;
-  }
-  51.39% {
-    clip: rect(51px, 9999px, 142px, 0);
-    left: -1%;
-  }
-  54.24% {
-    clip: rect(105px, 9999px, 151px, 0);
-    left: -4%;
-  }
-  57.1% {
-    clip: rect(204px, 9999px, 237px, 0);
-    left: -4%;
-  }
-  59.95% {
-    clip: rect(298px, 9999px, 317px, 0);
-    left: 5%;
-  }
-  62.81% {
-    clip: rect(60px, 9999px, 60px, 0);
-  }
-  65.665% {
-    clip: rect(438px, 9999px, 459px, 0);
-    left: -4%;
-  }
-  68.52% {
-    clip: rect(279px, 9999px, 294px, 0);
-    left: -4%;
-  }
-  71.375% {
-    clip: rect(448px, 9999px, 449px, 0);
-    left: -4%;
-  }
-  74.23% {
-    clip: rect(301px, 9999px, 345px, 0);
-    left: -2%;
-  }
-  77.08% {
-    clip: rect(466px, 9999px, 526px, 0);
-    left: -1%;
-  }
-  79.94% {
-    clip: rect(263px, 9999px, 296px, 0);
-    left: -4%;
-  }
-  82.795% {
-    clip: rect(174px, 9999px, 268px, 0);
-    left: 4%;
-  }
-  85.65% {
-    clip: rect(100px, 9999px, 167px, 0);
-    left: 2%;
-  }
-  88.505% {
-    clip: rect(308px, 9999px, 311px, 0);
-    left: 5%;
-  }
-  91.36% {
-    clip: rect(131px, 9999px, 147px, 0);
-    left: -1%;
-  }
-  94.21% {
-    clip: rect(54px, 9999px, 92px, 0);
-    left: -1%;
-  }
-  97.07% {
-    clip: rect(341px, 9999px, 421px, 0);
-    left: 3%;
-  }
-  100% {
-    clip: rect(354px, 9999px, 394px, 0);
-    left: 5%;
-  }
-}
-
-@keyframes main-glitch-2 {
-  5.71% {
-    clip: rect(204px, 9999px, 254px, 0);
-    left: -2%;
-  }
-  8.56% {
-    clip: rect(197px, 9999px, 236px, 0);
-    left: -4%;
-  }
-  11.42% {
-    clip: rect(452px, 9999px, 474px, 0);
-    left: 0%;
-  }
-  14.27% {
-    clip: rect(51px, 9999px, 57px, 0);
-    left: -2%;
-  }
-  17.13% {
-    clip: rect(108px, 9999px, 119px, 0);
-    left: 2%;
-  }
-  19.98% {
-    clip: rect(458px, 9999px, 480px, 0);
-    left: -3%;
-  }
-  22.84% {
-    clip: rect(188px, 9999px, 194px, 0);
-    left: -3%;
-  }
-  25.70% {
-    clip: rect(236px, 9999px, 241px, 0);
-    left: -3%;
-  }
-  28.55% {
-    clip: rect(190px, 9999px, 199px, 0);
-    left: -1%;
-  }
-  31.40% {
-    clip: rect(342px, 9999px, 384px, 0);
-    left: 5%;
-  }
-  34.26% {
-    clip: rect(436px, 9999px, 459px, 0);
-    left: -1%;
-  }
-  37.11% {
-    clip: rect(202px, 9999px, 240px, 0);
-    left: 2%;
-  }
-  39.97% {
-    clip: rect(278px, 9999px, 296px, 0);
-    left: -4%;
-  }
-  42.82% {
-    clip: rect(181px, 9999px, 191px, 0);
-    left: 4%;
-  }
-  45.68% {
-    clip: rect(29px, 9999px, 36px, 0);
-    left: 1%;
-  }
-  48.53% {
-    clip: rect(338px, 9999px, 366px, 0);
-    left: 5%;
-  }
-  51.39% {
-    clip: rect(335px, 9999px, 360px, 0);
-    left: -1%;
-  }
-  54.24% {
-    clip: rect(282px, 9999px, 297px, 0);
-    left: -2%;
-  }
-  57.1% {
-    clip: rect(56px, 9999px, 101px, 0);
-    left: 5%;
-  }
-  59.95% {
-    clip: rect(136px, 9999px, 167px, 0);
-    left: 4%;
-  }
-  62.81% {
-    clip: rect(430px, 9999px, 442px, 0);
-    left: 5%;
-  }
-}
-
-/*main image */
-.glitch-inner, .glitch-inner-2 {
-  width: 366px;
-  height: 380px;
-  background-image: url(../img/Mattia-responsive-neon.png);
-  background-size: cover;
-}
-
-.glitch {
-  position: absolute;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 366px;
-  height: 380px;
-  z-index: 0;
-  visibility: hidden;
-  background-image: url(../img/Mattia-responsive-neon.png);
-  background-size: cover;
-}
-
-.glitch-animation {
-  animation: main-glitch-show 1s step-end;
-}
-
-.glitch-animation-reverse {
-  animation: main-glitch-show 1s reverse step-end;
-}
-
-.glitch-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: .5;
-  clip: auto;
-}
-
-.glitch-inner-animation {
-  animation: main-glitch 1s step-end;
-}
-
-.glitch-inner-animation-reverse {
-  animation: main-glitch 1s reverse step-end;
-}
-
-.glitch-inner-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: .5;
-  clip: auto;
-}
-
-.glitch-inner-2-animation {
-  animation: main-glitch-2 1s step-end;
-}
-
-.glitch-inner-2-animation-reverse {
-  animation: main-glitch-2 1s reverse step-end;
-}
-
-.center {
-  margin: 0 auto;
 }
 
 .button-prova {
@@ -1683,6 +1368,95 @@ object {
   }
 }
 
+#landing-page {
+  margin-top: 10vh;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  #landing-page {
+    margin-top: 20vh;
+  }
+}
+
+.ml15 {
+  font-weight: 800;
+  font-size: 1.2em;
+  letter-spacing: 0.5em;
+  text-align: center;
+  margin: 30px;
+}
+
+@media (min-width: 768px) {
+  .ml15 {
+    font-size: 2.1em;
+  }
+}
+
+@media (min-width: 1980px) {
+  .ml15 {
+    font-size: 3.4em;
+  }
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1.2em;
+  color: white;
+  text-shadow: 0px 0px 22px #0ff;
+}
+
+.ml11 {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  margin: 100px 10px;
+}
+
+@media (min-width: 768px) {
+  .ml11 {
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 1980px) {
+  .ml11 {
+    margin-top: 40px;
+    font-size: 3.1em;
+  }
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+  box-shadow: 0 0 5px 1px #0ff, 0 0 5px 1px #0ff inset;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+  color: white;
+  text-shadow: 0px 0px 22px #0ff;
+}
+
 #portfolio {
   margin-top: 30px;
 }
@@ -1839,6 +1613,7 @@ object {
   right: 0;
   z-index: 10000;
   display: none;
+  max-height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -1892,14 +1667,8 @@ object {
 
 @media (min-width: 1024px) {
   .modal-portfolio-image {
-    height: 45vh;
-    width: auto;
-  }
-}
-
-@media (min-width: 1440px) {
-  .modal-portfolio-image {
     height: 38vh;
+    width: auto;
   }
 }
 

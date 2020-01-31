@@ -1,5 +1,5 @@
  
-
+const $landing = $('#landing-page');
 const $modalPortfolio = $("#modal-creation");
 const $portfolio = $("#portfolio");
 const $webDesign = $("#web-design");
@@ -145,6 +145,55 @@ function animateContactsReset(){
 };
 
 
+
+// LANDING PAGE
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 20],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  }).add({
+    targets: '.ml11 .line',
+    scaleY: [1,0],
+    opacity: [1,0.5],
+    easing: "easeInExpo",
+    duration: 100
+  });
+
+
 // PORTFOLIO
 
 
@@ -218,6 +267,7 @@ $modalPortfolio.on("click", ".close-modal", function(){
 })
 
 $("#menu-portfolio").click(function(){
+  $landing.slideUp(100);
   animateContactsReset();
   $webDesign.fadeOut();
   $contacts.fadeOut();
@@ -231,6 +281,7 @@ $("#menu-portfolio").click(function(){
 
 
 $("#menu-webdesign").click(function(){
+  $landing.fadeOut(100);
   $contacts.fadeOut(100);
   animateContactsReset();
   responsiveWebdesign();
@@ -323,6 +374,7 @@ function animateContacts(){
 
 
 $('#menu-contacts').on('click', function(){
+  $landing.fadeOut(100);
   $portfolio.fadeOut();
   $contacts.fadeIn(animateContacts());
 });
