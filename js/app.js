@@ -34,7 +34,7 @@ const projects = [
     webdesign: true,
     logodesign: false,
     photo: false,
-    adress: "https://www.ariannazingone.it/",
+    adress: "https://www.nicvannetti.com/employees/index.html",
     details: "This is just a test page, using a random user generator we simulated a list of employee and created a list that show some infos, with a filter by name and username and a modal to show details of the choosen employee"
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     webdesign: true,
     logodesign: false,
     photo: false,
-    adress: "https://www.ariannazingone.it/",
+    adress: "https://www.nicvannetti.com/dashboard/index.html",
     details: "We wanted to pratice a bit on dashboards cration here, we made a complete page that show random data using three type of charts, we also tried localstorage, making the website remember the setting u choose"
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     webdesign: true,
     logodesign: false,
     photo: false,
-    adress: "https://www.ariannazingone.it/",
+    adress: "https://www.nicvannetti.com/wheel/index.html",
     details: "Very very funny project this one, our goal was to pratice using javascript, making this very simple game. Try it out!!!"
   },
   {
@@ -64,7 +64,7 @@ const projects = [
     webdesign: true,
     logodesign: false,
     photo: false,
-    adress: "https://www.ariannazingone.it/",
+    adress: "https://www.nicvannetti.com/gallery/index.html",
     details: "One of the most popular plugin u see on every website is the photo lightbox, we used jquery here to integrate a simple plugin in our project, after we made a simple search bar to filter the images."
   }
 
@@ -339,7 +339,7 @@ $(".modal-webdesign-main-menu-return").on('click', function(){
 
 $('.menu-buttons').on('click', function(){
     webdesignModalFadeOut()
-    let z = $(this).attr("index");
+    let z = $(this).attr("id");
     txt = webdesign[z].description;
     setTimeout(function() {
     createModalWebdesign(z,$windowWidth);

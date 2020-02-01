@@ -24,7 +24,6 @@
     cursor: pointer;
     background-position: top;
     background-size: cover; 
-    filter: inner-shadow(2px 2px 5px);
     @include mq{
       width: 220px;
       height: 220px;
@@ -83,7 +82,7 @@
   .project-title-even{
     margin-top:35px;
     padding-bottom:5px;
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #D9488B;
     height: 20px;
     color:white;
     font-size:14px;
@@ -211,7 +210,7 @@
     margin:10px 20px;
     display:flex;
     flex-direction:row;
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #D9488B;
     @include mql{
       width: 300px;
       margin: 10px auto;
